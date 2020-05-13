@@ -42,7 +42,6 @@ describe "my_collect" do
     end).to eq(["Tim", "Tom", "Sophie", "Antoin"])
   end
 
-> ["Tim", "Tom", "Jim"]
   it 'does not modify the original collection' do
     my_collect(students) do |student|
       student.split(" ").first
@@ -50,5 +49,3 @@ describe "my_collect" do
     expect(students).to eq(['Tim Jones', 'Tom Smith', 'Sophie Johnson', 'Antoin Miller'])
   end
 end
-
-> ["RUBY", "JAVASCRIPT", "PYTHON", "OBJECTIVE-C"]
