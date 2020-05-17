@@ -4,7 +4,8 @@ def my_collect(collection)
   newCollection = []
   
     while (i < collection.length) do 
-      newCollection.push(yield(my_collect))
+      newCollection.push(yield(collection[i])) 
+ 
   
     i += 1 
 
@@ -12,7 +13,6 @@ def my_collect(collection)
   return newCollection
   
 end 
-
 
 
 
